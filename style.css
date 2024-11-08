@@ -1,0 +1,143 @@
+/* Đặt toàn trang */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: #222;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #FFD700;
+    text-align: center;
+}
+header h4 {
+    font-size: em;
+    color: #e45757;
+    padding-top: 10px;
+}
+
+/* Hiệu ứng hover cho thẻ <a> */
+a.icon:hover {
+    color: #3498db; /* Màu chữ khi hover */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+/* Hiệu ứng hover cho thẻ <i> bên trong <a> */
+a.icon:hover i {
+    transform: scale(1.2); /* Tăng kích thước icon khi hover */
+    transition: transform 0.3s ease;
+}
+
+/* Hiệu ứng hover cho <input type="text"> */
+input[type="text"]:hover {
+    border-color: #3498db; /* Đổi màu viền khi hover */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Đổ bóng */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.icons {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.icons .icon {
+    color: #ddd;
+    font-size: 1.3em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons .icon:hover {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+/* Navigation styling */
+nav {
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+}
+
+/* Banner styling */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+main section {
+    margin-bottom: 2em;
+}
+
+main h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    margin-top: 2em;
+}
